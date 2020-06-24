@@ -1,0 +1,12 @@
+{
+  "name": "fibnacci-test",
+  "version": "0.0.1",
+  "description": "",
+  "main": "",
+  "scripts": {"start": "node app.js"},
+  "author": "StephenKing",
+  "license": "MIT",
+  "devDependencies": {
+    "fake-indexeddb": "^2.1.1"
+  }
+}

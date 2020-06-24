@@ -1,0 +1,14 @@
+to add :l :x :r
+if empty? :l [if :x=1 [op se 1 :r] op :r]
+op add bl :l int (:x+last :l)/10000000 se remainder :x+last :l 10000000 :r
+end
+
+to fb :a :b :n
+if :n=2 [make "g_b :b stop]
+repeat (count :b)-(count :a) [make "a se 0 :a]
+fb :b add (map "sum :a :b) 0 [] :n-1
+end
+
+;for fmslogo
+;make "start timemilli fb [1] [1] 10000 pr :g_b
+;pr timemilli-:start
